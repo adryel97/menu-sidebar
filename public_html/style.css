@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+html, body *{
+    font-family: 'Roboto', sans-serif;
+}
+.perfilTopo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nomeUser{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.perfilUser{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.infoUser{
+    font-size: 12px;
+    color: #a7a7a7 !important;
+    letter-spacing: 2px;
+}
+.colorIcon{
+    color: #a7a7a7 !important;
+}
+.iconUser{
+    font-size: 60px;
+    margin-right: 15px;
+}
+
+.tituloNav{
+    background: #0c1b2f;
+    padding: 10px 35px;
+    color: #fff;
+}
+nav{
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+nav *{
+    color: #fff;
+}
+aside .accordion{
+    padding-left: 0;
+}
+aside{
+    position: fixed;
+    left: 0;
+    background: #2a3e5b;
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+.accordion li a{
+    letter-spacing: 1px;
+   font-weight: 200;
+}
+.accordion li{
+    cursor: pointer;
+}
+.accordion .links div{
+    padding-left: 25px;
+}
+.accordion .links{
+    transition: 0.2s;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid rgba(29, 26, 60, 0.25098039215686274);
+}
+.accordion .links:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    background: #e76226;
+}
+.ativo::before{
+    opacity: 1 !important;
+    display: block;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -13px;
+    border-width: 0px 0px 13px 14px;
+    border-left-color: #9c421a;
+    border-style: solid;
+    background: transparent;
+}
+.accordion .links::before{
+    opacity: 0;
+    display: block;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -13px;
+    border-width: 0px 0px 13px 14px;
+    border-left-color: #9c421a;
+    border-style: solid;
+}
+.accordion .links:hover::before{
+    transition-delay: 0.1s;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -13px;
+    border-width: 0px 0px 13px 14px;
+    border-left-color: #9c421a;
+    border-style: solid;
+}
+.sub-link{
+    padding-left: 65px;
+    font-size: 14px;
+}
+.sub-link li a{
+    font-weight: 400;
+}
+.sub-link li a:hover{
+    color: #e76226 !important;
+}
+.sub-link li{
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.iconPoint{
+    color: #17263c;
+    margin-right: 8px;
+    font-size: 7px;
+}
+.iconsMenu{
+    margin-right: 10px;
+    font-size: 17px
+}
+.ativo{
+    transform: scale(1.1);
+    background: #e76226;
+    position: relative;
+}

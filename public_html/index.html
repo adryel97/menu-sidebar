@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <aside>
+                <section class="perfilTopo">
+                    <section class="perfilUser">
+                        <div class="iconUser">
+                            <i class="fas fa-user-circle"></i> 
+                        </div>
+                        <div class="nomeUser">
+                            Nome do usuário<br>
+                            <a class="infoUser">Informações <i class="fas fa-caret-right colorIcon"></i></a>
+                        </div>
+                    </section>    
+<!--                    <section class="infoUser">
+                        <a>Informações</a>
+                    </section>-->
+                </section>
+                <section class="tituloNav">
+                    Navegação
+                </section>
+                <ul class="accordion" id="accordionExample">
+                    <li class="links"><div><a><i class="fas fa-home iconsMenu"></i> Pagina inicial</a></div></li>
+                    <li class="links" data-toggle="collapse" data-target="#collapseCadastro" aria-expanded="false" aria-controls="collapseCadastro">
+                        <div><a><i class="fas fa-id-card iconsMenu"></i> Cadastro</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseCadastro" aria-labelledby="headingCadastro" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Pendências</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Cadastrar Veículo</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Buscar Veículo</a></li>
+                    </section>
+                    <li class="links" data-toggle="collapse" data-target="#collapseUm" aria-expanded="false" aria-controls="collapseUm">
+                        <div><a><i class="fas fa-car iconsMenu"></i> Veículo</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseUm" aria-labelledby="headingUm" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Pendências</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Cadastrar Veículo</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Buscar Veículo</a></li>
+                    </section>
+                    <li class="links" data-toggle="collapse" data-target="#collapseDois" aria-expanded="false" aria-controls="collapseDois">
+                        <div><a><i class="fas fa-file-alt iconsMenu"></i> Nota fiscal</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseDois" aria-labelledby="headingDois" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 1</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 2</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 3</a></li>
+                    </section>
+                    <li class="links" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                        <div><a><i class="fas fa-coins iconsMenu"></i> Financeiro</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseTres" aria-labelledby="headingTres" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 1</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 2</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 3</a></li>
+                    </section>
+                    <li class="links" data-toggle="collapse" data-target="#collapseQuatro" aria-expanded="false" aria-controls="collapseQuatro">
+                        <div><a><i class="fas fa-users iconsMenu"></i> Usuários</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseQuatro" aria-labelledby="headingQuatro" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 1</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 2</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 3</a></li>
+                    </section>
+                    <li class="links" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+                        <div><a><i class="fas fa-chart-bar iconsMenu"></i> Relatórios</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseCinco" aria-labelledby="headingCinco" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 1</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 2</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 3</a></li>
+                    </section>
+                    <li class="links" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+                        <div><a><i class="fas fa-paste iconsMenu"></i> Documentos</a></div>
+                    </li>
+                    <section class="sub-link collapse" id="collapseSeis" aria-labelledby="headingSeis" data-parent="#accordionExample">
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 1</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 2</a></li>
+                        <li><i class="fas fa-circle iconPoint"></i> <a>Sub-link 3</a></li>
+                    </section>
+                    <li class="links"><div><a><i class="fas fa-cogs iconsMenu"></i> Configurações</a></div></li>
+                    <li class="links"><div><a><i class="fas fa-headset iconsMenu"></i> Suporte</a></div></li>
+                </ul>
+            </aside>
+        </nav>
+        <script>
+            var header = document.getElementById("accordionExample");
+            var btns = header.getElementsByClassName("links");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("ativo");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace(" ativo", "");
+                    }
+                    this.className += " ativo";
+                });
+            }
+        </script>
+    </body>
+</html>
